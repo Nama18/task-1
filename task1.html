@@ -1,0 +1,48 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jadwal Kerja</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 py-4">
+                <h1>Jadwal Bekerja</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="rounded shadow p-4">
+                    <h4>Input Tipe Shift dan Jam Kerja</h4>
+                    <hr>
+                    <div class="d-flex flex-column">
+                        <div class="form-floating mb-3">
+                            <input class="form-control" type="text" id="input-tipe">
+                            <label for="input-shift">Shift A/B</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" type="number" id="input-jam">
+                            <label for="input-jam">Jam Kerja Max 10 Jam</label>
+                        </div>
+                            <button type="button" class="btn btn-primary mt-5 w-100" id="tombol-tampil">Tampilkan Jadwal Kerja</button>
+                            <button type="button" class="btn btn-primary mt-5 w-100" id="tombol-reset">Reset</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="rounded shadow p-4">
+                    <h4>Jadwal Kerja</h4>
+                    <hr>
+                    <div class="d-flex flex-column" id="tampil-hasil"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <script src="task1.js"></script>
+</body>
+</html>
